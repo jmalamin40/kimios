@@ -186,20 +186,22 @@
             </plugins>
         </pluginManagement>
         <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>buildnumber-maven-plugin</artifactId>
-                <version>1.4</version>
-                <executions>
-                    <execution>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>create</goal>
-                            <goal>create-metadata</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+            
+		<plugin>
+		    <groupId>org.codehaus.mojo</groupId>
+		    <artifactId>buildnumber-maven-plugin</artifactId>
+		    <version>1.4</version>
+		    <executions>
+			<execution>
+			    <phase>validate</phase>
+			    <goals>
+				<goal>create</goal>
+				<goal>create-metadata</goal>
+			    </goals>
+			</execution>
+		    </executions>
+		</plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
